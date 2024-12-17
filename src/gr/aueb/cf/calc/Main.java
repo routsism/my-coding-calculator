@@ -17,7 +17,7 @@ public class Main {
         try{
             return a / b;
         }catch (ArithmeticException e){
-            System.err.println("");
+            System.err.println("Error . Denominator must not be zero");
             throw e;
         }
 
@@ -25,5 +25,14 @@ public class Main {
 
     public static int mul(int a , int b){
         return a * b;
+    }
+
+    public static int mod (int a , int b ) {
+        try{
+            return a % b;
+        }catch (ArithmeticException e){
+            System.err.println("Error . Denominator must not be zero.");
+            throw e;
+        }
     }
 }
